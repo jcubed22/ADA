@@ -18,4 +18,14 @@ ada.controller('LandingCtrl', function LandingCtrl($scope, $interval) {
     $interval.cancel($scope.countdown);
     alert("You saved us!");
   }
+
+  $scope.adaSpeak = function(message, index, interval) {
+    if (index < message.length) {
+      console.log(message[index++]);
+      setTimeout(function () {
+        $scope.adaSpeak(message, index, interval);
+      }, interval);
+    }
+  }
+
 });

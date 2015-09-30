@@ -12,6 +12,10 @@ body {
   margin-right: auto;
   background-color: black;
   border: none;
+  font-family: 'Press Start 2P';
+  color: #44F048;
+  padding-top: 1px;
+  padding-left: 10px;
 }
 
 .counter {
