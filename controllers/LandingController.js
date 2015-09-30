@@ -4,11 +4,13 @@ ada.controller('LandingCtrl', function LandingCtrl($scope, $interval) {
 
   $scope.startCountdown = function() {
     $scope.countdown = $interval(function() {
-      $scope.counter--
-      if ($scope.counter === 0) {
-        $scope.counter = "explosion!";
+      --$scope.counter;
+      if ($scope.counter === -1) {
+        $scope.counter = 0;
+        alert("explosion!");
         $interval.cancel($scope.countdown);
       }
+      $scope.counter = ($scope.counter < 10) ? "0" + $scope.counter: $scope.counter;
     }, 1000);
   }
 
