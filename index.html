@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="ada">
   <head>
     <title>ADA</title>
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-ui-router.js"></script>
+    <script src="app.js"></script>
     <script src="js/scripts.js"></script>
   </head>
   <body>
-    <p>open javascript console to see countdown</p>
+    <div ui-view></div>
   </body>
 </html>
