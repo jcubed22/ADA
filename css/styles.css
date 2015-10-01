@@ -1,7 +1,12 @@
 body {
-  background-image: url("img/galaxy.jpg");
-  background-size: 100% cover;
-  background-repeat: no-repeat;
+  /*background-image: url("img/cockpit.png");*/
+  /*z-index: 100;*/
+  /*background-size: cover;*/
+  /*background-repeat: no-repeat;*/
+  /*background-position: center center;*/
+  /*background-attachement: fixed;*/
+  padding: 0;
+  margin: 0;
 }
 
 .terminal {
@@ -21,4 +26,28 @@ body {
 .counter {
   font-family: 'Press Start 2P';
   color: red;
+}
+
+video#bgvid {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+}
+
+#cockpit {
+  background-image: url("img/cockpit.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#fix {
+  height: 500px;
 }
