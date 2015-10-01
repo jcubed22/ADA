@@ -1,17 +1,11 @@
 body {
-  /*background-image: url("img/cockpit.png");*/
-  /*z-index: 100;*/
-  /*background-size: cover;*/
-  /*background-repeat: no-repeat;*/
-  /*background-position: center center;*/
-  /*background-attachement: fixed;*/
   padding: 0;
   margin: 0;
 }
 
 #terminal {
-  height: 300px;
-  width: 500px;
+  height: 200px;
+  width: 350px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -24,6 +18,26 @@ body {
   padding-top: 1px;
   padding-left: 10px;
   box-shadow: 0px 0px 0px 20px rgba(107,107,107, .9);
+  border-radius: 5px;
+}
+
+#left-console {
+  float: left;
+  margin-left: 70px;
+  margin-top: -30px;
+}
+
+#right-console {
+  float: right;
+  margin-right: 70px;
+  margin-top: -30px;
+}
+
+.console {
+  height: 200px;
+  width: 300px;
+  display: inline-block;
+  border: 3px solid rgb(16, 34, 50);
   border-radius: 5px;
 }
 
@@ -48,13 +62,70 @@ video#bgvid {
 
 #cockpit {
   background-image: url("img/cockpit.png");
-  /*background-size: contain;
-  background-repeat: no-repeat;*/
+  background-position: center;
   position: fixed;
   min-width: 100%;
   min-height: 100%;
   width: auto;
   height: auto;
-
   background-size: cover;
+}
+
+.wide-btn {
+  height: 20px;
+  width: 80px;
+  outline: none;
+}
+
+.rounded-btn {
+  height: 20px;
+  width: 80px;
+  border-radius: 50px;
+  outline: none;
+}
+
+.long-btn {
+  height: 80px;
+  width: 40px;
+  outline: none;
+}
+
+.circle-btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.square-btn {
+  height: 30px;
+  width: 30px;
+  outline: none;
+}
+
+.oval-btn {
+  height: 40px;
+  width: 120px;
+  border-radius: 35%;
+  outline: none;
+}
+
+.blue-btn {
+  background-color: #144DEA
+}
+
+.gold-btn {
+  background-color: #A89A3E;
+}
+
+.orange-btn {
+  background-color: #D25F21;
+}
+
+.light-blue-btn {
+  background-color: #3C89FB;
+}
+
+.grey-btn  {
+  background-color: #47616D;
 }
