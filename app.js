@@ -18,5 +18,14 @@ ada.config(function($stateProvider, $urlRouterProvider) {
         templateUrl: "partials/explosion.html",
       }
     }
+});
+
+    $stateProvider.state('homebase', {
+      url: "/homebase",
+      views: {
+        'body': {
+          templateUrl: "partials/homebase.html",
+        }
+      }
   });
 });
