@@ -1,13 +1,17 @@
-ada.controller('LandingCtrl', function LandingCtrl($scope, $interval) {
+ada.controller('LandingCtrl', function LandingCtrl($scope, $interval, $location) {
 
   $scope.counter = 10;
+  var alarm = new Audio('../css/alarm.mp3');
+  alarm.play();
 
   $scope.startCountdown = function() {
     $scope.countdown = $interval(function() {
       --$scope.counter;
       if ($scope.counter === -1) {
         $scope.counter = 0;
-        alert("explosion!");
+        alarm.pause();
+        alarm.currentTime = 0;
+        $location.path('/explosion');
         $interval.cancel($scope.countdown);
       }
       $scope.counter = ($scope.counter < 10) ? "0" + $scope.counter: $scope.counter;
@@ -16,6 +20,8 @@ ada.controller('LandingCtrl', function LandingCtrl($scope, $interval) {
 
   $scope.stopCountdown = function() {
     $interval.cancel($scope.countdown);
+    alarm.pause();
+    alarm.currentTime = 0;
     alert("You saved us!");
   }
 
@@ -31,5 +37,4 @@ ada.controller('LandingCtrl', function LandingCtrl($scope, $interval) {
       }
     }, 100);
   }
-
 });

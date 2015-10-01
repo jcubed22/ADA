@@ -43,7 +43,10 @@ body {
 
 .counter {
   font-family: 'Press Start 2P';
+  font-size: 50px;
   color: red;
+  text-align: center;
+  padding-top: 35px;
 }
 
 video#bgvid {
@@ -104,7 +107,7 @@ video#bgvid {
 }
 
 .oval-btn {
-  height: 40px;
+  height: 110px;
   width: 120px;
   border-radius: 35%;
   outline: none;
