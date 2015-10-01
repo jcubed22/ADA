@@ -6,4 +6,10 @@ ada.config(function($stateProvider, $urlRouterProvider) {
     templateUrl: "partials/home.html",
     controller: "LandingCtrl"
   });
+
+  $stateProvider.state('martian', {
+    url: "outside",
+    templateUrl: "partials/martian_buttes.html",
+    controller: "InventoryCtrl"
+  });
 });
