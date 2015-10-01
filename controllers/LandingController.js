@@ -19,13 +19,17 @@ ada.controller('LandingCtrl', function LandingCtrl($scope, $interval) {
     alert("You saved us!");
   }
 
-  $scope.adaSpeak = function(message, index, interval) {
-    if (index < message.length) {
-      console.log(message[index++]);
-      setTimeout(function () {
-        $scope.adaSpeak(message, index, interval);
-      }, interval);
-    }
+  $scope.message = "";
+
+  $scope.adaSpeak = function(message, index) {
+    $scope.count = $interval(function() {
+      var letter = message[index];
+      $scope.message += letter;
+      index++;
+      if (index == message.length) {
+        $interval.cancel($scope.count);
+      }
+    }, 100);
   }
 
 });
