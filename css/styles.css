@@ -1,0 +1,24 @@
+body {
+  background-image: url("img/galaxy.jpg");
+  background-size: 100% cover;
+  background-repeat: no-repeat;
+}
+
+.terminal {
+  height: 400px;
+  width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  border: none;
+  font-family: 'Press Start 2P';
+  color: #44F048;
+  padding-top: 1px;
+  padding-left: 10px;
+}
+
+.counter {
+  font-family: 'Press Start 2P';
+  color: red;
+}
