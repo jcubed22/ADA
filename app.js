@@ -19,4 +19,13 @@ ada.config(function($stateProvider, $urlRouterProvider) {
       }
     }
   });
+
+  $stateProvider.state('draggable', {
+    url: "/draggable",
+    views: {
+      'body': {
+        templateUrl: "partials/draggable.html",
+      }
+    }
+  });
 });

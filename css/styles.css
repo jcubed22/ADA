@@ -133,3 +133,11 @@ video#bgvid {
 .grey-btn  {
   background-color: #47616D;
 }
+
+
+/* ------------------------*/ /* ---------->>> DRAGGABLE <<<-----------*/ /* ------------------------*/
+.draggable {
+  width: 150px;
+  height: 150px; 
+  border: 1px solid black;
+}
