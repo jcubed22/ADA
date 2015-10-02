@@ -4,13 +4,17 @@
     <title>ADA</title>
     <script src="lib/angular.js"></script>
     <script src="lib/angular-ui-router.js"></script>
+    <script src="lib/ui-bootstrap-0.13.4.js"></script>
     <script src="app.js"></script>
     <script src="services/InventoryFactory.js"></script>
     <script src="controllers/LandingController.js"></script>
     <script src="controllers/InventoryController.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="../css/styles.css" type="text/css" media="screen"  charset="utf-8">
     <!-- // <script src="js/scripts.js"></script> -->
   </head>
   <body>
     <div ui-view></div>
+    <div ui-view="dialog"></div>
   </body>
 </html>
