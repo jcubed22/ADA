@@ -1,3 +1,4 @@
+
 body {
   padding: 0;
   margin: 0;
@@ -153,6 +154,10 @@ video#bgvid {
 /* ------------------------*/ /* ---------->>> DRAGGABLE <<<-----------*/ /* ------------------------*/
 .draggable {
   width: 150px;
-  height: 150px; 
+  height: 150px;
   border: 1px solid black;
+=======
+.outside {
+  background: url("../images/marsbuttes.jpg");
+
 }
