@@ -153,6 +153,10 @@ video#bgvid {
 /* ------------------------*/ /* ---------->>> DRAGGABLE <<<-----------*/ /* ------------------------*/
 .draggable {
   width: 150px;
-  height: 150px; 
+  height: 150px;
   border: 1px solid black;
+
+.image {
+  width: 1200px;
+  height: 900px;
 }

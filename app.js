@@ -1,4 +1,4 @@
-var ada = angular.module('ada', ['ui.router']);
+var ada = angular.module('ada', ['ui.router', 'ui.bootstrap']);
 
 ada.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider.state('home', {
@@ -34,6 +34,20 @@ ada.config(function($stateProvider, $urlRouterProvider) {
     views: {
       'body': {
         templateUrl: "partials/draggable.html",
+      }
+    }
+  });
+
+  $stateProvider.state('martian', {
+    url: "outside",
+    views: {
+      '': {
+        templateUrl: "partials/martian_buttes.html",
+        controller: "InventoryCtrl"
+      },
+      'dialog': {
+        templateUrl: 'partials/dialog.html',
+        controller: 'InventoryCtrl'
       }
     }
   });
