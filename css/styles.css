@@ -1,3 +1,8 @@
 .outside {
-  background: url("../images/marsbuttes.jpg");  
+  background: url("../images/marsbuttes.jpg");
+}
+
+.image {
+  width: 1200px;
+  height: 900px;
 }
