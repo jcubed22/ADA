@@ -41,7 +41,7 @@ ada.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider.state('martian', {
     url: "outside",
     views: {
-      '': {
+      'body': {
         templateUrl: "partials/martian_buttes.html",
         controller: "InventoryCtrl"
       },
