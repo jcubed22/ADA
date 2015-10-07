@@ -12,20 +12,21 @@
     <script src="services/InventoryFactory.js"></script>
     <script src="controllers/LandingController.js"></script>
     <script src="controllers/SideBarController.js"></script>
+    <script src="controllers/InventoryController.js"></script>
     <script src="directives/directives.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
 
-    <script src="controllers/InventoryController.js"></script>
-    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="../css/styles.css" type="text/css" media="screen"  charset="utf-8">
+
     <!-- // <script src="js/scripts.js"></script> -->
   </head>
   <body>
     <div ui-view></div>
+    <div ui-view="body"></div>
     <div ui-view="dialog"></div>
+    <div ui-view="sideBar"></div>
 
 
   </body>

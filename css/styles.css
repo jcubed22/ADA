@@ -1,4 +1,3 @@
-
 body {
   padding: 0;
   margin: 0;
@@ -150,33 +149,18 @@ video#bgvid {
   background-color: #47616D;
 }
 
-/* Modal Dialog Formatting */
-.part-img {
-  width: 300px;
-  height: 300px;
-}
-
-.modal-dialog {
-  width: 325px;
-  height: 325px;
-}
-
-.body-img {
-  display: inline-block;
-  margin: auto;
-}
 
 /* ------------------------*/ /* ---------->>> DRAGGABLE <<<-----------*/ /* ------------------------*/
 .draggable {
   width: 150px;
   height: 150px;
   border: 1px solid black;
-<<<<<<< HEAD
+}
 
 .image {
   width: 1200px;
   height: 900px;
-=======
+
 }
 
 .outside {

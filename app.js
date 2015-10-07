@@ -45,6 +45,10 @@ ada.config(function($stateProvider, $urlRouterProvider) {
         templateUrl: "partials/martian_buttes.html",
         controller: "InventoryCtrl"
       },
+      'sideBar': {
+        templateUrl: "partials/test.html",
+        controller: "SideBarCtrl"
+      },
       'dialog': {
         templateUrl: 'partials/dialog.html',
         controller: 'InventoryCtrl'
