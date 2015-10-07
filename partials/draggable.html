@@ -1,4 +1,4 @@
-<div id="drag-page">
+<div id="drag-page" ng-init="blastOff()">
   <p>2: <span id="result2"></span></p>
   <p>3: <span id="result3"></span></p>
 
@@ -12,18 +12,16 @@
     </p>
   </div>
 
-
-  <div class="div-row">
-    <div class="draggable">1</div>
-    <div class="draggable">1</div>
-    <p id="3drag" draggable>$scope</p>
-  </div>
-
-
   <div class="div-row">
     <div class="draggable">1</div>
     <div id="2goal" class="draggable">2 goal</div>
     <div class="draggable">1</div>
     <div id="2drag" class="draggable" draggable>2 drag</div>
+  </div>
+
+  <div class="div-row">
+    <div class="draggable">1</div>
+    <div class="draggable">1</div>
+    <p id="3drag" draggable>$scope</p>
   </div>
 </div>

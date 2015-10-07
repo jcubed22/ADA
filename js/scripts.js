@@ -1,4 +1,7 @@
+var readyForBlastOff = false;
+
 $(document).ready(function() {
+
   function collision($div1, $div2) {
     // gives us coordinates of first div
     // relative to left and top of page
@@ -34,6 +37,10 @@ $(document).ready(function() {
   // checks to detect for div collision every millisecond
   window.setInterval(function() {
     $("#result2").text(collision($('#2goal'), $("#2drag")));
+    if ((collision($('#2goal'), $("#2drag")))) {
+      readyForBlastOff = true;
+    }
+
   }, 100);
 
   window.setInterval(function() {
@@ -43,7 +50,7 @@ $(document).ready(function() {
       $("#x").hide();
     } else {
       $("#check").hide();
-      $("#x").show();        
+      $("#x").show();
     }
   }, 100);
 
