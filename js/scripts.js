@@ -38,5 +38,18 @@ $(document).ready(function() {
 
   window.setInterval(function() {
     $("#result3").text(collision($('#3goal'), $("#3drag")));
+    if ((collision($('#3goal'), $("#3drag")))) {
+      $("#check").show();
+      $("#x").hide();
+    } else {
+      $("#check").hide();
+      $("#x").show();        
+    }
+  }, 100);
+
+  window.setInterval(function() {
+    if ((collision($('#2goal'), $("#2drag"))) && (collision($('#3goal'), $("#3drag")))) {
+      alert("Blast off!");
+    }
   }, 100);
 });
