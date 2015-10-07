@@ -1,3 +1,4 @@
+
 body {
   padding: 0;
   margin: 0;
@@ -170,8 +171,116 @@ video#bgvid {
   width: 150px;
   height: 150px;
   border: 1px solid black;
+<<<<<<< HEAD
 
 .image {
   width: 1200px;
   height: 900px;
+=======
+}
+
+.outside {
+  background: url("../images/marsbuttes.jpg");
+
+}
+
+/* ----------------- Test --------------*/
+
+#side-bar {
+    border: 1px solid black;
+    display: inline-block;
+    width: 300px;
+    height: 650px;
+    padding: 5px 10px;
+    position: relative;
+    float: left;
+}
+
+#message-center {
+  box-sizing: border-box;
+  height: 100px;
+  width: 100%;
+  display: block;
+  margin: 20px 0px;
+  background-color: black;
+  opacity: 0.9;
+  border: none;
+  font-family: 'Press Start 2P';
+  color: #44F048;
+  padding-top: 1px;
+  padding-left: 10px;
+  box-shadow: 0px 0px 0px 10px rgba(107,107,107, .9);
+  border-radius: 5px;
+  border: 1px solid pink;
+  float: left;
+}
+
+#oxygen-bar-holder {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  height: 400px;
+  width: 50px;
+  float: right;
+  border: 2px groove black;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px;
+}
+
+#oxygen-bar {
+  position: relative;
+  border: 1px solid lightgreen;
+  float: right;
+  background-color: lightgreen;
+  color: black;
+  width: 95%;
+  height: 400px;
+}
+
+#items-list {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 200px;
+  width: 200px;
+  display: block;
+  margin: 20px 10px;
+  background-color: black;
+  opacity: 0.9;
+  border: none;
+  font-family: 'Press Start 2P';
+  color: #44F048;
+  padding-top: 1px;
+  padding-left: 10px;
+  box-shadow: 0px 0px 0px 10px rgba(107,107,107, .9);
+  border-radius: 5px;
+  border: 1px solid pink;
+  float: left;
+
+}
+
+#game-controls {
+  border: 1px solid orange;
+  height: 200px;
+  width: 200px;
+  margin-top: 35px;
+  float: left;
+}
+
+#oxy-text {
+  display: inline-block;
+  text-align: center;
+  margin-left: 45px;
+  margin-top: 40px;
+}
+
+#picture {
+  border: 2px solid tomato;
+  height: 650px;
+  width: 900px;
+  float: left;
+  text-align: center;
 }

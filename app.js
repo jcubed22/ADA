@@ -51,4 +51,10 @@ ada.config(function($stateProvider, $urlRouterProvider) {
       }
     }
   });
+
+  $stateProvider.state('test', {
+    url: "test",
+    templateUrl: "partials/test.html",
+    controller: "SideBarCtrl"
+  });
 });
