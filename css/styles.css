@@ -153,6 +153,15 @@ video#bgvid {
 /* ------------------------*/ /* ---------->>> DRAGGABLE <<<-----------*/ /* ------------------------*/
 .draggable {
   width: 150px;
-  height: 150px; 
-  border: 1px solid black;
+  height: 150px;
+  border: 1px solid #44F048;
+}
+
+.div-row div {
+  display: inline-block;
+}
+
+#drag-page {
+  background-color: black;
+  color: #44F048;
 }

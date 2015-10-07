@@ -29,11 +29,10 @@ $(document).ready(function() {
       return false;
     }
     return true;
-
   }
 
-  // checks to detect for div collision every 2ms
+  // checks to detect for div collision every millisecond
   window.setInterval(function() {
     $("#result").text(collision($('#div1'), $("#div2")));
-  }, 200);
+  }, 100);
 });

@@ -34,6 +34,7 @@ ada.config(function($stateProvider, $urlRouterProvider) {
     views: {
       'body': {
         templateUrl: "partials/draggable.html",
+        controller: "DraggableCtrl"
       }
     }
   });
