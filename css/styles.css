@@ -158,7 +158,6 @@ video#bgvid {
 .modal-dialog {
   width: 330px;
   height: 325px;
-  text-align: center;
 }
 
 .modal-content {
@@ -264,7 +263,23 @@ video#bgvid {
   border-radius: 5px;
   border: 1px solid pink;
   float: left;
+}
 
+#items-list .head {
+  font-size: 13px;
+}
+
+#items-list p {
+  font-size: 8px;
+}
+
+#items-list span {
+  position: absolute;
+  display: inline-block;
+  vertical-align: bottom;
+  bottom: 0;
+  right: 0;
+  margin-right: 10px;
 }
 
 #game-controls {
