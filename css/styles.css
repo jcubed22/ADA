@@ -158,17 +158,17 @@ video#bgvid {
   margin: 50px;
 }
 
-.div-row div {
+.code-row div {
   display: inline-block;
 }
 
-.div-row img {
+.code-row img {
   display: inline-block;
   max-width: 25px;
   margin: 5px 20px -5px 25px;
 }
 
-.div-row p {
+.code-row p {
   display: inline-block;
   font-size: 20px;
 }
@@ -178,11 +178,13 @@ video#bgvid {
   /*color: #44F048;*/
 }
 
-#drag-page p {
-  margin: 0;
-  padding: 0;
-}
-
 #check {
   display: none;
+}
+
+.empty-goal {
+  width: 80px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
 }

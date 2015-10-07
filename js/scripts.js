@@ -36,27 +36,53 @@ $(document).ready(function() {
 
   // checks to detect for div collision every millisecond
   window.setInterval(function() {
-    $("#result2").text(collision($('#2goal'), $("#2drag")));
-    if ((collision($('#2goal'), $("#2drag")))) {
-      readyForBlastOff = true;
-    }
-
-  }, 100);
-
-  window.setInterval(function() {
-    $("#result3").text(collision($('#3goal'), $("#3drag")));
-    if ((collision($('#3goal'), $("#3drag")))) {
-      $("#check").show();
-      $("#x").hide();
+    if ((collision($('#scope-goal'), $("#scope-drag")))) {
+      $("#check1").show();
+      $("#x1").hide();
     } else {
-      $("#check").hide();
-      $("#x").show();
+      $("#check1").hide();
+      $("#x1").show();
     }
   }, 100);
 
   window.setInterval(function() {
-    if ((collision($('#2goal'), $("#2drag"))) && (collision($('#3goal'), $("#3drag")))) {
-      alert("Blast off!");
+    if ((collision($('#function-goal'), $("#function-drag")))) {
+      $("#check2").show();
+      $("#x2").hide();
+    } else {
+      $("#check2").hide();
+      $("#x2").show();
+    }
+  }, 100);
+
+  window.setInterval(function() {
+    if ((collision($('#if-goal'), $("#if-drag")))) {
+      $("#check3").show();
+      $("#x3").hide();
+    } else {
+      $("#check3").hide();
+      $("#x3").show();
+    }
+  }, 100);
+
+  window.setInterval(function() {
+    if ((collision($('#blastOff-goal'), $("#blastOff-drag")))) {
+      $("#check4").show();
+      $("#x4").hide();
+    } else {
+      $("#check4").hide();
+      $("#x4").show();
+    }
+  }, 100);
+
+  //checks to see if all divs are in proper place
+  window.setInterval(function() {
+    if ((collision($('#blastOff-goal'), $("#blastOff-drag")))
+      &&(collision($('#if-goal'), $("#if-drag")))
+      &&(collision($('#function-goal'), $("#function-drag")))
+      &&(collision($('#scope-goal'), $("#scope-drag")))
+      ) {
+        readyForBlastOff = true;
     }
   }, 100);
 });
