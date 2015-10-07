@@ -1,6 +1,11 @@
+#body{
+  display: inline-block;
+  float: left;
+}
 body {
   padding: 0;
   margin: 0;
+  width: 2000px;
 }
 
 #terminal {
@@ -180,6 +185,7 @@ video#bgvid {
 .image {
   width: 1200px;
   height: 900px;
+  display: inline-block;
 
 }
 
@@ -189,7 +195,9 @@ video#bgvid {
 }
 
 /* ----------------- Test --------------*/
-
+#sideBar-container {
+  float: left;
+}
 #side-bar {
     border: 1px solid black;
     display: inline-block;
@@ -224,7 +232,7 @@ video#bgvid {
   bottom: 0;
   right: 0;
   background-color: black;
-  height: 400px;
+  height: 415px;
   width: 50px;
   float: right;
   border: 2px groove black;
