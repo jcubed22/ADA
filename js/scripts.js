@@ -7,8 +7,8 @@ $(document).ready(function() {
 
     // gives us the height and width of the first div
     // (true) means it will include margin
-    var h1 = $div1.outerHeight(true);
-    var w1 = $div1.outerWidth(true);
+    var h1 = $div1.outerHeight();
+    var w1 = $div1.outerWidth();
 
     // adds the value of the top coordinate to the element's height
     var b1 = y1 + h1;
@@ -19,8 +19,8 @@ $(document).ready(function() {
     // do the same for the second div
     var x2 = $div2.offset().left;
     var y2 = $div2.offset().top;
-    var h2 = $div2.outerHeight(true);
-    var w2 = $div2.outerWidth(true);
+    var h2 = $div2.outerHeight();
+    var w2 = $div2.outerWidth();
     var b2 = y2 + h2;
     var r2 = x2 + w2;
 
@@ -33,6 +33,10 @@ $(document).ready(function() {
 
   // checks to detect for div collision every millisecond
   window.setInterval(function() {
-    $("#result").text(collision($('#div1'), $("#div2")));
+    $("#result2").text(collision($('#2goal'), $("#2drag")));
+  }, 100);
+
+  window.setInterval(function() {
+    $("#result3").text(collision($('#3goal'), $("#3drag")));
   }, 100);
 });

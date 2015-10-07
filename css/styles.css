@@ -152,9 +152,10 @@ video#bgvid {
 
 /* ------------------------*/ /* ---------->>> DRAGGABLE <<<-----------*/ /* ------------------------*/
 .draggable {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   border: 1px solid #44F048;
+  margin: 50px;
 }
 
 .div-row div {
@@ -164,4 +165,9 @@ video#bgvid {
 #drag-page {
   background-color: black;
   color: #44F048;
+}
+
+#drag-page p {
+  margin: 0;
+  padding: 0;
 }
