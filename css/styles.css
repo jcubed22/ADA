@@ -149,6 +149,21 @@ video#bgvid {
   background-color: #47616D;
 }
 
+/* Modal Dialog Formatting */
+.part-img {
+  width: 300px;
+  height: 300px;
+}
+
+.modal-dialog {
+  width: 325px;
+  height: 325px;
+}
+
+.body-img {
+  display: inline-block;
+  margin: auto;
+}
 
 /* ------------------------*/ /* ---------->>> DRAGGABLE <<<-----------*/ /* ------------------------*/
 .draggable {
