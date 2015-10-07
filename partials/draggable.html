@@ -1,3 +1,75 @@
-<div class="draggable" draggable>1</div>
-<div class="draggable" draggable>2</div>
-<div class="draggable" draggable>3</div>
+<div id="drag-page" ng-init="blastOff()">
+  <div class="code-row">
+    <img id="x1" src="css/img/x.png"/>
+    <img id="check1" src="css/img/check.png"/>
+    <p>
+      ada.controller('DraggableCtrl', function DraggableCtrl(
+      <p class="empty-goal" id="scope-goal"><p>
+      , $location) {
+    </p>
+  </div>
+
+  <div class="code-row">
+    <img id="x2" src="css/img/x.png"/>
+    <img id="check2" src="css/img/check.png"/>
+    <div>
+      <p class="empty-goal"></p>
+      <p>$scope.blastOff = </p>
+      <p class="empty-goal" id="function-goal"></p>
+      <p>{</p>
+    </div>
+  </div>
+
+
+    <div class="code-row">
+      <img id="x3" src="css/img/x.png"/>
+      <img id="check3" src="css/img/check.png"/>
+      <div>
+        <p class="empty-goal"></p>
+        <p class="empty-goal" id="if-goal"></p>
+        <p>(readyForBlastOff) {</p>
+      </div>
+    </div>
+
+    <div class="code-row">
+      <img id="x4" src="css/img/x.png"/>
+      <img id="check4" src="css/img/check.png"/>
+      <div>
+        <p class="empty-goal"></p>
+        <p class="empty-goal"></p>
+        <p class="empty-goal"></p>
+        <p>$location.path("</p>
+        <p class="empty-goal" id="blastOff-goal"></p>
+        <p>");</p>
+      </div>
+    </div>
+
+    <div class="code-row">
+      <p class="empty-goal"></p>
+      <p class="empty-goal"></p>
+      <p class="empty-goal"></p>
+      <p>}</p>
+    </div>
+
+    <div class="code-row">
+      <p class="empty-goal"></p>
+      <p class="empty-goal"></p>
+      <p>}</p>
+    </div>
+
+    <div class="code-row">
+      <p class="empty-goal"></p>
+      <p>});</p>
+    </div>
+
+  <!-- draggable code elements -->
+  <div class="code-row">
+    <h3>drag us!</h3>
+    <p id="scope-drag" draggable>$scope</p>
+    <p id="function-drag" draggable>function()</p>
+    <p id="if-drag" draggable>if</p>
+    <p id="blastOff-drag" draggable>/blastOff</p>
+  </div>
+
+  <button ng-click="blastOff()">LAUNCH!</button>
+</div>
