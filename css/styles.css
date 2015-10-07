@@ -1,6 +1,11 @@
+#body{
+  display: inline-block;
+  float: left;
+}
 body {
   padding: 0;
   margin: 0;
+  width: 2000px;
 }
 
 #terminal {
@@ -172,14 +177,47 @@ video#bgvid {
 
 /* ------------------------*/ /* ---------->>> DRAGGABLE <<<-----------*/ /* ------------------------*/
 .draggable {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   border: 1px solid black;
+  margin: 50px;
+}
+
+.code-row div {
+  display: inline-block;
+}
+
+.code-row img {
+  display: inline-block;
+  max-width: 25px;
+  margin: 5px 20px -5px 25px;
+}
+
+.code-row p {
+  display: inline-block;
+  font-size: 20px;
+}
+
+#drag-page {
+  /*background-color: black;*/
+  /*color: #44F048;*/
+}
+
+#check {
+  display: none;
+}
+
+.empty-goal {
+  width: 80px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
 }
 
 .image {
   width: 1200px;
   height: 900px;
+  display: inline-block;
 
 }
 
@@ -189,7 +227,9 @@ video#bgvid {
 }
 
 /* ----------------- Test --------------*/
-
+#sideBar-container {
+  float: left;
+}
 #side-bar {
     border: 1px solid black;
     display: inline-block;
@@ -224,7 +264,7 @@ video#bgvid {
   bottom: 0;
   right: 0;
   background-color: black;
-  height: 400px;
+  height: 415px;
   width: 50px;
   float: right;
   border: 2px groove black;

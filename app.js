@@ -34,6 +34,7 @@ ada.config(function($stateProvider, $urlRouterProvider) {
     views: {
       'body': {
         templateUrl: "partials/draggable.html",
+        controller: "DraggableCtrl"
       }
     }
   });
@@ -43,10 +44,10 @@ ada.config(function($stateProvider, $urlRouterProvider) {
     views: {
       'body': {
         templateUrl: "partials/martian_buttes.html",
-        controller: "InventoryCtrl"
+        controller: "InventoryCtrl",
       },
       'sideBar': {
-        templateUrl: "partials/test.html",
+        templateUrl: "partials/sideBar.html",
         controller: "SideBarCtrl"
       },
       'dialog': {
@@ -56,9 +57,4 @@ ada.config(function($stateProvider, $urlRouterProvider) {
     }
   });
 
-  $stateProvider.state('test', {
-    url: "test",
-    templateUrl: "partials/test.html",
-    controller: "SideBarCtrl"
-  });
 });
