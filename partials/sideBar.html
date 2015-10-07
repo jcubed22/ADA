@@ -2,13 +2,14 @@
 <div id="side-bar">
   <div id="message-center">
     message center
+    {{InventoryFactory.count}}
   </div>
   <!-- <div id="oxy-text">
     <h5>Oxygen <br>Bar</h5>
   </div> -->
   <div id="oxygen-bar-holder">
-    <div id="oxygen-bar" ng-style="myStyle">
-      {{oxygenLeft}}
+    <div id="oxygen-bar" ng-style="InventoryFactory.myStyle">
+      <span style="font-size: .75em;">{{InventoryFactory.oxygenLeft}}</span>
     </div>
   </div>
   <div id="game-controls">
@@ -21,7 +22,4 @@
   <div id="items-list">
     items list
   </div>
-</div>
-<div id="picture" ng-mousemove="onMouseOver()" ng-click="onClick()">
-  <h1>This is where the picture will be</h1>
 </div>

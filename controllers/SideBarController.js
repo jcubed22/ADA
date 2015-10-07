@@ -1,4 +1,5 @@
-ada.controller("SideBarCtrl", function SideBarCtrl($scope){
+ada.controller("SideBarCtrl", function SideBarCtrl($scope, InventoryFactory){
+    $scope.InventoryFactory = InventoryFactory;
     $scope.count = 0;
     $scope.oxygenLeft = 400;
     $scope.myStyle = {'height': 400 + 'px'};
