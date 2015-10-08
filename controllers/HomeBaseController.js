@@ -1,5 +1,7 @@
 ada.controller('HomeBaseCtrl', function HomeBaseCtrl($scope, $interval) {
 
+  $scope.message = "";
+  
   $scope.adaSpeak = function(message, index) {
     $scope.count = $interval(function() {
       var letter = message[index];
