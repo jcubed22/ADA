@@ -27,9 +27,9 @@ ada.controller('HomeBaseCtrl', function HomeBaseCtrl($scope, $interval, Inventor
     InventoryFactory.invertStyle = "";
   }
 
-  $scope.test = function () {
+  $scope.messageGenerator = function () {
     if (!InventoryFactory.wentOutside) {
-      $scope.adaSpeak('Just kidding! We did crash though. Welcome to U\'tah!', 0);
+      $scope.adaSpeak('Just kidding! We did crash though. Welcome to U\'tah!\n Go outside and look for the parts we need to fix our ship!', 0);
     } else if (InventoryFactory.oxygenLeft > 0 && (InventoryFactory.parts_found != 3)) {
       $scope.adaSpeak("Get back out there! You can't leave without finding all three missing parts!", 0)
     } else if (InventoryFactory.parts_found === 3) {
