@@ -1,7 +1,6 @@
 ada.controller('HomeBaseCtrl', function HomeBaseCtrl($scope, $interval, InventoryFactory) {
 
   $scope.InventoryFactory = InventoryFactory;
-  console.log(InventoryFactory.wentOutside);
   $scope.message = "";
 
   $scope.adaSpeak = function(message, index) {
