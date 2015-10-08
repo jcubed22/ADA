@@ -218,7 +218,7 @@ video#bgvid {
 
 .code-row p {
   display: inline-block;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #drag-page {
@@ -258,13 +258,12 @@ video#bgvid {
   width: 1200px;
   height: 900px;
   display: inline-block;
-
 }
 
 #launch-btn {
   background-color: black;
   border: 2px solid #44F048;
-  font-size: 200px;
+  font-size: 150px;
 }
 
 #background {
@@ -279,9 +278,11 @@ video#bgvid {
 
 #drag-items {
   border: 2px solid #44F048;
-  width: 270px;
+  width: 250px;
   list-style-type: none;
-  font-size: 20px;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 
@@ -295,7 +296,7 @@ video#bgvid {
   border: 1px solid black;
   display: inline-block;
   width: 300px;
-  height: 900px;
+  height: 800px;
   padding: 5px 10px;
   position: relative;
   float: left;
