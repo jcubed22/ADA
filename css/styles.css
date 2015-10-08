@@ -48,11 +48,12 @@ body {
 
 .console {
   height: 250px;
-  width: 300px;
+  width: 305px;
   display: inline-block;
   border: 3px solid rgb(16, 34, 50);
   border-radius: 5px;
   padding: 7px;
+  background: rgba(255,255,255,0.1);
 }
 
 .counter {
@@ -103,6 +104,19 @@ video#bgvid {
   background-size: cover;
 }
 
+/* ------------------------*/ /* ---------->>> BUTTONS <<<-----------*/ /* ------------------------*/
+.console button {
+  margin: 5px;
+}
+
+#left-console div {
+  display: inline-block;
+}
+
+.two-buttons button{
+  display: list-item;
+}
+
 .wide-btn {
   height: 20px;
   width: 80px;
@@ -117,7 +131,7 @@ video#bgvid {
 }
 
 .long-btn {
-  height: 80px;
+  height: 110px;
   width: 40px;
   outline: none;
 }
@@ -137,7 +151,7 @@ video#bgvid {
 
 .oval-btn {
   height: 110px;
-  width: 120px;
+  width: 110px;
   border-radius: 35%;
   outline: none;
 }
