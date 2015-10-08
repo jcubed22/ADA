@@ -48,7 +48,7 @@ body {
 
 .console {
   height: 250px;
-  width: 305px;
+  width: 330px;
   display: inline-block;
   border: 3px solid rgb(16, 34, 50);
   border-radius: 5px;
@@ -110,6 +110,10 @@ video#bgvid {
 }
 
 #left-console div {
+  display: inline-block;
+}
+
+#right-console div {
   display: inline-block;
 }
 
