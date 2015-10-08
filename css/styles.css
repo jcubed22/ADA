@@ -370,7 +370,14 @@ video#bgvid {
 }
 
 #game-controls {
-  border: 1px solid orange;
+  box-sizing: border-box;
+  background-color: black;
+  opacity: 0.9;
+  font-family: 'Press Start 2P';
+  color: #44F048;
+  box-shadow: 0px 0px 0px 10px rgba(107,107,107, .9);
+  border-radius: 5px;
+  border: 1px solid pink;
   height: 200px;
   width: 200px;
   margin-top: 35px;
