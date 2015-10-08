@@ -258,7 +258,6 @@ video#bgvid {
   width: 1200px;
   height: 900px;
   display: inline-block;
-
 }
 
 .outside {
@@ -299,7 +298,7 @@ video#bgvid {
   border: 1px solid black;
   display: inline-block;
   width: 300px;
-  height: 900px;
+  height: 800px;
   padding: 5px 10px;
   position: relative;
   float: left;
