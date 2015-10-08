@@ -49,16 +49,19 @@ ada.factory('InventoryFactory', function InventoryFactory($location) {
   //Find parts
   factory.find_pin = function () {
     factory.kaniflin_pin = 1;
-
+    factory.parts_found++;
+    
   };
 
   factory.find_whangdoodle = function () {
     factory.whangdoodle = 1;
-
+    factory.parts_found++;
+    
   };
 
   factory.find_distributor = function () {
     factory.proton_redistributor = 1;
+    factory.parts_found++;
 
   };
 

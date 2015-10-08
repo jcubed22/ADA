@@ -22,6 +22,7 @@ ada.controller('HomeBaseCtrl', function HomeBaseCtrl($scope, $interval, Inventor
   $scope.refillOxygen = function () {
     InventoryFactory.count = 0;
     InventoryFactory.oxygenLeft = 400;
+    InventoryFactory.invertStyle = '';
   }
 
   $scope.test = function () {
