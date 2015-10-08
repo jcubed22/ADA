@@ -66,7 +66,7 @@ $(document).ready(function() {
   }, 100);
 
   window.setInterval(function() {
-    if ((collision($('#blastOff-goal'), $("#blastOff-drag")))) {
+    if ((collision($('#launch-goal'), $("#launch-drag")))) {
       $("#check4").show();
       $("#x4").hide();
     } else {
@@ -77,7 +77,7 @@ $(document).ready(function() {
 
   //checks to see if all divs are in proper place
   window.setInterval(function() {
-    if ((collision($('#blastOff-goal'), $("#blastOff-drag")))
+    if ((collision($('#launch-goal'), $("#launch-drag")))
       &&(collision($('#if-goal'), $("#if-drag")))
       &&(collision($('#function-goal'), $("#function-drag")))
       &&(collision($('#scope-goal'), $("#scope-drag")))
