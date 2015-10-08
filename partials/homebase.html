@@ -6,6 +6,6 @@
   </div>
 
   <button ng-click="wentOutside(); refillOxygen()" ui-sref="martian">Go outside</button>
-  <button ng-show="InventoryFactory.parts_found" ui-sref="draggable">Blast off!</button>
+  <button ng-show="InventoryFactory.parts_found === 3" ui-sref="draggable">Blast off!</button>
 
 </div>
