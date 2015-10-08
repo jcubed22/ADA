@@ -2,8 +2,8 @@
   <img style="-webkit-filter: invert(75%) hue-rotate(180deg);" src="images/marsbuttes.jpg" alt="" usemap="#ButteMap" style:'position: absolute' no-repeat/>
   {{InventoryFactory.count}}
   <map name="ButteMap" id="ButteMap">
-      <area ng-click="find_pin()" data-toggle="modal" data-target="#kaniflin_pin" href="#" shape="rect" coords="686,767,660,790" />
-      <area ng-click="find_whangdoodle()" data-toggle="modal" data-target="#whangdoodle" href="#" shape="circle" coords="151,832,10" />
-      <area ng-click="find_distributor()" data-toggle="modal" data-target="#distributor" href="#" shape="rect" coords="340,459,382,476" />
+      <area ng-if="InventoryFactory.kaniflin_pin == 0" ng-click="find_pin()" data-toggle="modal" data-target="#kaniflin_pin" href="#" shape="rect" coords="733,514,738,519" />
+      <area ng-if="InventoryFactory.whangdoodle == 0" ng-click="find_whangdoodle()" data-toggle="modal" data-target="#whangdoodle" href="#" shape="circle" coords="151,832,10" />
+      <area ng-if="InventoryFactory.proton_redistributor == 0" ng-click="find_distributor()" data-toggle="modal" data-target="#distributor" href="#" shape="rect" coords="431,491,440,493" />
   </map>
 </div>
