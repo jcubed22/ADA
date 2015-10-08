@@ -261,10 +261,6 @@ video#bgvid {
 
 }
 
-.outside {
-  background: url("../images/marsbuttes.jpg");
-}
-
 #launch-btn {
   background-color: black;
   border: 2px solid #44F048;
