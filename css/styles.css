@@ -408,3 +408,13 @@ video#bgvid {
   width: 200px;
   border: 2px solid black;
 }
+@keyframes blinker {
+  50% { opacity: 0.0; }
+}
+.warning {
+  color: red;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  animation: blinker .1s linear infinite;
+}

@@ -1,6 +1,6 @@
 <div class="image" ng-mousemove="InventoryFactory.onMouseOver()" ng-click="InventoryFactory.onClick()" >
   <img ng-style="InventoryFactory.invertStyle" src="images/marsbuttes.jpg" alt="" usemap="#ButteMap" style:'position: absolute' no-repeat/>
-
+  <h1 class="warning" ng-show="InventoryFactory.count > 300">YOU ARE RUNNING OUT OF OXYGEN!!!!!!!!!!</h1>
   <map name="ButteMap" id="ButteMap">
       <area ng-if="InventoryFactory.kaniflin_pin == 0" ng-click="find_pin()" data-toggle="modal" data-target="#kaniflin_pin" href="#" shape="rect" coords="733,514,738,519" />
       <area ng-if="InventoryFactory.whangdoodle == 0" ng-click="find_whangdoodle()" data-toggle="modal" data-target="#whangdoodle" href="#" shape="circle" coords="151,832,10" />
