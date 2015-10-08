@@ -189,7 +189,7 @@ video#bgvid {
 
 .code-row img {
   display: inline-block;
-  max-width: 25px;
+  max-width: 35px;
   margin: 5px 20px -5px 25px;
 }
 
@@ -199,8 +199,11 @@ video#bgvid {
 }
 
 #drag-page {
-  /*background-color: black;*/
-  /*color: #44F048;*/
+  background-color: black;
+  color: #44F048;
+  opacity: 0.9;
+  border: none;
+  font-family: 'Press Start 2P';
 }
 
 #check {
@@ -208,7 +211,7 @@ video#bgvid {
 }
 
 .empty-goal {
-  width: 80px;
+  width: 200px;
   height: 30px;
   margin: 0;
   padding: 0;
@@ -223,7 +226,10 @@ video#bgvid {
 
 .outside {
   background: url("../images/marsbuttes.jpg");
+}
 
+.draggable {
+  cursor: pointer;
 }
 
 /* ----------------- Test --------------*/

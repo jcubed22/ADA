@@ -1,7 +1,14 @@
 <div id="drag-page" ng-init="blastOff()">
   <div class="code-row">
-    <img id="x1" src="css/img/x.png"/>
-    <img id="check1" src="css/img/check.png"/>
+    <p ng-init="adaSpeak(
+      'My head hurts. Can you complete my programming so we can leave?'
+      , 0)">{{ message }}</p>
+  </div>
+
+
+  <div class="code-row">
+    <img id="x1" src="css/img/green-x.png"/>
+    <img id="check1" src="css/img/green-check.png"/>
     <p>
       ada.controller('DraggableCtrl', function DraggableCtrl(
       <p class="empty-goal" id="scope-goal"><p>
@@ -10,8 +17,8 @@
   </div>
 
   <div class="code-row">
-    <img id="x2" src="css/img/x.png"/>
-    <img id="check2" src="css/img/check.png"/>
+    <img id="x2" src="css/img/green-x.png"/>
+    <img id="check2" src="css/img/green-check.png"/>
     <div>
       <p class="empty-goal"></p>
       <p>$scope.blastOff = </p>
@@ -22,8 +29,8 @@
 
 
     <div class="code-row">
-      <img id="x3" src="css/img/x.png"/>
-      <img id="check3" src="css/img/check.png"/>
+      <img id="x3" src="css/img/green-x.png"/>
+      <img id="check3" src="css/img/green-check.png"/>
       <div>
         <p class="empty-goal"></p>
         <p class="empty-goal" id="if-goal"></p>
@@ -32,8 +39,8 @@
     </div>
 
     <div class="code-row">
-      <img id="x4" src="css/img/x.png"/>
-      <img id="check4" src="css/img/check.png"/>
+      <img id="x4" src="css/img/green-x.png"/>
+      <img id="check4" src="css/img/green-check.png"/>
       <div>
         <p class="empty-goal"></p>
         <p class="empty-goal"></p>
@@ -64,11 +71,10 @@
 
   <!-- draggable code elements -->
   <div class="code-row">
-    <h3>drag us!</h3>
-    <p id="scope-drag" draggable>$scope</p>
-    <p id="function-drag" draggable>function()</p>
-    <p id="if-drag" draggable>if</p>
-    <p id="launch-drag" draggable>/launch</p>
+    <p class="draggable" id="scope-drag" draggable>$scope</p>
+    <p class="draggable" id="function-drag" draggable>function()</p>
+    <p class="draggable" id="if-drag" draggable>if</p>
+    <p class="draggable" id="launch-drag" draggable>/launch</p>
   </div>
 
   <button ng-click="blastOff()">LAUNCH!</button>
