@@ -26,6 +26,7 @@ ada.config(function($stateProvider, $urlRouterProvider) {
       views: {
         'body': {
           templateUrl: "partials/homebase.html",
+          controller: "HomeBaseCtrl"
         }
       }
   });
