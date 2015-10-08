@@ -5,7 +5,6 @@
       , 0)">{{ message }}</p>
   </div>
 
-
   <div class="code-row">
     <img id="x1" src="css/img/green-x.png"/>
     <img id="check1" src="css/img/green-check.png"/>
@@ -20,7 +19,7 @@
     <img id="x2" src="css/img/green-x.png"/>
     <img id="check2" src="css/img/green-check.png"/>
     <div>
-      <p class="empty-goal"></p>
+      <p class="indent"></p>
       <p>$scope.blastOff = </p>
       <p class="empty-goal" id="function-goal"></p>
       <p>{</p>
@@ -32,7 +31,6 @@
       <img id="x3" src="css/img/green-x.png"/>
       <img id="check3" src="css/img/green-check.png"/>
       <div>
-        <p class="empty-goal"></p>
         <p class="empty-goal" id="if-goal"></p>
         <p>(readyForBlastOff) {</p>
       </div>
@@ -42,8 +40,7 @@
       <img id="x4" src="css/img/green-x.png"/>
       <img id="check4" src="css/img/green-check.png"/>
       <div>
-        <p class="empty-goal"></p>
-        <p class="empty-goal"></p>
+        <p class="indent"></p>
         <p class="empty-goal"></p>
         <p>$location.path("</p>
         <p class="empty-goal" id="launch-goal"></p>
@@ -52,20 +49,20 @@
     </div>
 
     <div class="code-row">
-      <p class="empty-goal"></p>
-      <p class="empty-goal"></p>
-      <p class="empty-goal"></p>
+      <p class="img-placeholder"></p>
+      <p class="indent"></p>
+      <p class="indent"></p>
       <p>}</p>
     </div>
 
     <div class="code-row">
-      <p class="empty-goal"></p>
-      <p class="empty-goal"></p>
+      <p class="img-placeholder"></p>
+      <p class="indent"></p>
       <p>}</p>
     </div>
 
     <div class="code-row">
-      <p class="empty-goal"></p>
+      <p class="img-placeholder"></p>
       <p>});</p>
     </div>
 
@@ -77,5 +74,5 @@
     <p class="draggable" id="launch-drag" draggable>/launch</p>
   </div>
 
-  <button ng-click="blastOff()">LAUNCH!</button>
+  <button id="launch-btn" ng-click="blastOff()">LAUNCH!</button>
 </div>

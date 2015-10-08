@@ -177,10 +177,7 @@ video#bgvid {
 
 /* ------------------------*/ /* ---------->>> DRAGGABLE <<<-----------*/ /* ------------------------*/
 .draggable {
-  width: 100px;
-  height: 100px;
-  border: 1px solid black;
-  margin: 50px;
+  cursor: pointer;
 }
 
 .code-row div {
@@ -217,6 +214,19 @@ video#bgvid {
   padding: 0;
 }
 
+.indent {
+  width: 50px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.img-placeholder {
+  display: inline-block;
+  width: 50px;
+  margin: 5px 20px -5px 25px;
+}
+
 .image {
   width: 1200px;
   height: 900px;
@@ -228,8 +238,9 @@ video#bgvid {
   background: url("../images/marsbuttes.jpg");
 }
 
-.draggable {
-  cursor: pointer;
+#launch-btn {
+  background-color: black;
+  border: 2px solid #44F048;
 }
 
 /* ----------------- Test --------------*/
