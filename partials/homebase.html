@@ -1,16 +1,17 @@
 <img id="planet" src="css/img/mars4.jpg">
 
-
 <div id="cockpit">
   <div id="terminal">
-    <p id="test" ng-init="adaSpeak('Make it stop!!!', 0)">{{ message }}</p>
+    <p id="test" ng-init="adaSpeak(
+      'Just kidding! We did crash though. Welcome to U\'tah!'
+      , 0)">{{ message }}</p>
   </div>
 
-  <div id="left-console" class="console">
+  <button ng-click="stopCountdown()" ui-sref="martian">Go outside</button>
+  
+  <!-- <div id="left-console" class="console">
   </div>
 
   <div id="right-console" class="console">
-  </div>
-
-
+  </div> -->
 </div>
