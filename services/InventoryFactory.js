@@ -1,33 +1,43 @@
-ada.factory('InventoryFactory', function InventoryFactory() {
+ada.factory('InventoryFactory', function InventoryFactory($location) {
   var factory = {};
 
   factory.count = 0;
   factory.oxygenLeft = 400;
   factory.myStyle = {'height': 400 + 'px'};
-  factory.end = false;
+  factory.end = true;
+  factory.invertStyle;
+
+
+
 
   factory.onClick = function () {
-      if (factory.count < 350) {
-          factory.count = factory.count + 10;
-          factory.myStyle = {'height': (400 - factory.count) + 'px'};
-          factory.oxygenLeft = 400 - factory.count;
+    if (factory.count > 300) {
+        factory.invertStyle = {'-webkit-filter': 'invert(75%) hue-rotate(180deg)'};
+    }
+    if (factory.count < 390) {
+        factory.count = factory.count + 10;
+        factory.myStyle = {'height': (400 - factory.count) + 'px'};
+        factory.oxygenLeft = 400 - factory.count;
 
-      } else {
-          factory.myStyle = {'height': 0 + 'px'};
+    } else {
+        factory.myStyle = {'height': 0 + 'px'};
 
-          factory.end = true;
-      }
+        $location.path("/homebase");
+    }
   }
 
   factory.onMouseOver = function () {
+    if (factory.count > 300) {
+        factory.invertStyle = {'-webkit-filter': 'invert(75%) hue-rotate(180deg)'};
+    }
 
-      if (factory.count > 399.5) {
+    if (factory.count > 399.75) {
 
-          factory.end = true;
-      }
-      factory.oxygenLeft = 400 - factory.count;
-      factory.count = factory.count + .25;
-      factory.myStyle = {'height': (400 - factory.count) + 'px'};
+        $location.path("/homebase");
+    }
+    factory.oxygenLeft = 400 - factory.count;
+    factory.count = factory.count + .25;
+    factory.myStyle = {'height': (400 - factory.count) + 'px'};
 
   }
 

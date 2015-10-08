@@ -1,6 +1,6 @@
-<div class="image" ng-mouseover="InventoryFactory.onMouseOver()" ng-click="InventoryFactory.onClick()" >
-  <img style="-webkit-filter: invert(75%) hue-rotate(180deg);" src="images/marsbuttes.jpg" alt="" usemap="#ButteMap" style:'position: absolute' no-repeat/>
-  {{InventoryFactory.count}}
+<div class="image" ng-mousemove="InventoryFactory.onMouseOver()" ng-click="InventoryFactory.onClick()" >
+  <img ng-style="InventoryFactory.invertStyle" src="images/marsbuttes.jpg" alt="" usemap="#ButteMap" style:'position: absolute' no-repeat/>
+
   <map name="ButteMap" id="ButteMap">
       <area ng-click="find_pin()" data-toggle="modal" data-target="#kaniflin_pin" href="#" shape="rect" coords="686,767,660,790" />
       <area ng-click="find_whangdoodle()" data-toggle="modal" data-target="#whangdoodle" href="#" shape="circle" coords="151,832,10" />

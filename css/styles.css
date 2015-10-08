@@ -1,3 +1,4 @@
+
 #body{
   display: inline-block;
   float: left;
@@ -344,4 +345,8 @@ video#bgvid {
   width: 900px;
   float: left;
   text-align: center;
+}
+
+.invert {
+  -webkit-filter: invert(75%) hue-rotate(180deg);
 }
