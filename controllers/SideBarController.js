@@ -1,8 +1,8 @@
-ada.controller("SideBarCtrl", function SideBarCtrl($scope, InventoryFactory, $interval){
+ada.controller("SideBarCtrl", function SideBarCtrl($scope, InventoryFactory, $interval, $location){
     $scope.InventoryFactory = InventoryFactory;
     $scope.startOxygenCountdown = function() {
       $scope.oxygenCountdown = $interval(function() {
-        if (InventoryFactory.count > 400){
+        if (InventoryFactory.oxygenLeft < 1) {
           $interval.cancel(oxygenCountdown);
         }
         InventoryFactory.onMouseOver()
