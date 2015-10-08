@@ -402,3 +402,9 @@ video#bgvid {
 .invert {
   -webkit-filter: invert(75%) hue-rotate(180deg);
 }
+
+#homebase-console {
+  height: 400px;
+  width: 200px;
+  border: 2px solid black;
+}

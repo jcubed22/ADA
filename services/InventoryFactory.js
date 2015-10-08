@@ -13,14 +13,13 @@ ada.factory('InventoryFactory', function InventoryFactory($location) {
     if (factory.count > 300) {
         factory.invertStyle = {'-webkit-filter': 'invert(75%) hue-rotate(180deg)'};
     }
-    if (factory.count < 390) {
+    if (factory.count < 400) {
         factory.count = factory.count + 10;
         factory.myStyle = {'height': (400 - factory.count) + 'px'};
         factory.oxygenLeft = 400 - factory.count;
 
     } else {
         factory.myStyle = {'height': 0 + 'px'};
-
         $location.path("/homebase");
     }
   }
@@ -30,7 +29,7 @@ ada.factory('InventoryFactory', function InventoryFactory($location) {
         factory.invertStyle = {'-webkit-filter': 'invert(75%) hue-rotate(180deg)'};
     }
 
-    if (factory.count > 399.75) {
+    if (factory.count > 400) {
 
         $location.path("/homebase");
     }

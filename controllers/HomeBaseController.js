@@ -24,6 +24,7 @@ ada.controller('HomeBaseCtrl', function HomeBaseCtrl($scope, $interval, Inventor
     InventoryFactory.count = 0;
     InventoryFactory.oxygenLeft = 400;
     InventoryFactory.myStyle = {'height': 400 +'px'};
+    InventoryFactory.invertStyle = "";
   }
 
   $scope.test = function () {
