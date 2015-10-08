@@ -18,7 +18,7 @@ ada.config(function($stateProvider, $urlRouterProvider) {
         templateUrl: "partials/explosion.html",
       }
     }
-});
+  });
 
     $stateProvider.state('homebase', {
       url: "/homebase",
@@ -35,6 +35,15 @@ ada.config(function($stateProvider, $urlRouterProvider) {
       'body': {
         templateUrl: "partials/draggable.html",
         controller: "DraggableCtrl"
+      }
+    }
+  });
+
+  $stateProvider.state('launch', {
+    url: "/launch",
+    views: {
+      'body': {
+        templateUrl: "partials/launch.html",
       }
     }
   });
