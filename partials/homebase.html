@@ -2,13 +2,11 @@
 
 <div id="cockpit">
   <div id="terminal">
-    <p id="test" ng-init="adaSpeak(
-      'Just kidding! We did crash though. Welcome to U\'tah!'
-      , 0)">{{ message }}</p>
+    {{message}}
   </div>
 
-  <button ng-click="stopCountdown()" ui-sref="martian">Go outside</button>
-  
+  <button ng-click="wentOutside(); refillOxygen()" ui-sref="martian">Go outside</button>
+
   <!-- <div id="left-console" class="console">
   </div>
 

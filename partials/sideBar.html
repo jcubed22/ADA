@@ -12,14 +12,13 @@
     </div>
   </div>
   <div id="game-controls">
-    <button><a ui-sref="hombase">Back to the ship!</a></button>
-
+    <button class="orange-btn" ui-sref="homebase">Back to the ship!</button>
   </div>
   <div id="items-list">
     <p class="head">Part Inventory</p>
     <p ng-show="InventoryFactory.whangdoodle == 1">Whangdoodle</p>
     <p ng-show="InventoryFactory.kaniflin_pin == 1">Kaniflin Pin</p>
     <p ng-show="InventoryFactory.proton_redistributor == 1">Proton Redistributor</p>
-    <span><p>({{InventoryFactory.find_part()}}/3) Parts Found</p></span>
+    <span><p>({{InventoryFactory.parts_found}}/3) Parts Found</p></span>
   </div>
 </div>

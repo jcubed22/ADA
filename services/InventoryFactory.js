@@ -6,9 +6,8 @@ ada.factory('InventoryFactory', function InventoryFactory($location) {
   factory.myStyle = {'height': 400 + 'px'};
   factory.end = true;
   factory.invertStyle;
-
-
-
+  factory.parts_found = 0;
+  factory.wentOutside = false;
 
   factory.onClick = function () {
     if (factory.count > 300) {
@@ -50,14 +49,17 @@ ada.factory('InventoryFactory', function InventoryFactory($location) {
   //Find parts
   factory.find_pin = function () {
     factory.kaniflin_pin = 1;
+
   };
 
   factory.find_whangdoodle = function () {
     factory.whangdoodle = 1;
+
   };
 
   factory.find_distributor = function () {
     factory.proton_redistributor = 1;
+
   };
 
   factory.find_part = function () {
