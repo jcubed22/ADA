@@ -1,6 +1,6 @@
 ada.controller('LandingCtrl', function LandingCtrl($scope, $interval, $location) {
 
-  $scope.counter = 10;
+  $scope.counter = 15;
   var alarm = new Audio('../css/alarm.mp3');
   alarm.play();
 
