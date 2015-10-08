@@ -218,7 +218,7 @@ video#bgvid {
 
 .code-row p {
   display: inline-block;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #drag-page {
@@ -267,7 +267,7 @@ video#bgvid {
 #launch-btn {
   background-color: black;
   border: 2px solid #44F048;
-  font-size: 200px;
+  font-size: 150px;
 }
 
 #background {
@@ -282,9 +282,11 @@ video#bgvid {
 
 #drag-items {
   border: 2px solid #44F048;
-  width: 270px;
+  width: 250px;
   list-style-type: none;
-  font-size: 20px;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 
