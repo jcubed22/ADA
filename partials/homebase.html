@@ -6,7 +6,7 @@
   </div>
 
   <div id="homebase-console">
-    <button class="orange-btn" g-hide="InventoryFactory.parts_found === 3" ng-click="wentOutside(); refillOxygen()" ui-sref="martian">Go outside</button>
+    <button class="orange-btn" ng-hide="InventoryFactory.parts_found === 3" ng-click="wentOutside(); refillOxygen()" ui-sref="martian">Go outside</button>
     <button class="orange-btn" ng-show="InventoryFactory.parts_found === 3" ui-sref="draggable">Blast off!</button>
   </div>
 
