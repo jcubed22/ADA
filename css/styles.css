@@ -6,6 +6,13 @@ body {
   padding: 0;
   margin: 0;
   width: 2000px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
 }
 
 #terminal {
