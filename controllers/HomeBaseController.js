@@ -33,7 +33,7 @@ ada.controller('HomeBaseCtrl', function HomeBaseCtrl($scope, $interval, Inventor
     } else if (InventoryFactory.oxygenLeft > 0 && (InventoryFactory.parts_found != 3)) {
       $scope.adaSpeak("Get back out there! You can't leave without finding all three missing parts!", 0)
     } else if (InventoryFactory.parts_found === 3) {
-      $scope.adaSpeak('You found all of the parts! On to the next challenge!', 0)
+      $scope.adaSpeak('You found all of the parts! Hit blast off to go to the next challenge!', 0)
     } else if ((InventoryFactory.parts_found != 3) && (InventoryFactory.oxygenLeft < 399.75)) {
       $scope.adaSpeak('You ran out of oxygen! Go back outside and try again!', 0);
     }

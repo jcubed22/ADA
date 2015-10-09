@@ -3,7 +3,7 @@
 <div id="drag-page" ng-init="blastOff()">
   <div class="code-row">
     <p ng-init="adaSpeak(
-      'My head hurts. Can you complete my programming so we can leave?'
+      'I\'m broken! Fix my programming so we can leave!'
       , 0)">{{ message }}</p>
   </div>
   <br>
@@ -72,13 +72,13 @@
 
   <!-- draggable code elements -->
   <div class="code-row">
+    <h5>(Drag these code elements to their proper position in the function above)</h5>
     <ul id="drag-items">
       <li class="draggable" id="if-drag" draggable>if</li>
       <li class="draggable" id="scope-drag" draggable>$scope</li>
       <li class="draggable" id="launch-drag" draggable>/launch</li>
-      <li class="draggable" id="function-drag" draggable>function()</li>            
+      <li class="draggable" id="function-drag" draggable>function()</li>
     </ul>
-
   </div>
 
   <button id="launch-btn" ng-click="blastOff()">LAUNCH!</button>
